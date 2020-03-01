@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes, Router} from '@angular/router';
-import { HttpClient } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { Pagina1Component } from './pagina1/pagina1.component';
 import { Pagina2Component } from './pagina2/pagina2.component';
 import { Pagina3Component } from './pagina3/pagina3.component';
 import { FormsModule }   from '@angular/forms';
+import {ButtonModule} from 'primeng/button';
 
 
 @NgModule({
@@ -20,6 +20,8 @@ import { FormsModule }   from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ButtonModule,
     RouterModule.forRoot([{ path: "login", component: LoginComponent },
     { path: "pagina1", component: Pagina1Component},
     { path: "pagina2", component: Pagina2Component },
