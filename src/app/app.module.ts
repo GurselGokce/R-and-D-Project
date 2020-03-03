@@ -8,6 +8,8 @@ import { Pagina2Component } from './pagina2/pagina2.component';
 import { Pagina3Component } from './pagina3/pagina3.component';
 import { FormsModule }   from '@angular/forms';
 import {ButtonModule} from 'primeng/button';
+import {ChartModule} from 'primeng/chart';
+
 
 
 @NgModule({
@@ -21,6 +23,7 @@ import {ButtonModule} from 'primeng/button';
   imports: [
     BrowserModule,
     FormsModule,
+    ChartModule,
     ButtonModule,
     RouterModule.forRoot([{ path: "login", component: LoginComponent },
     { path: "pagina1", component: Pagina1Component},
